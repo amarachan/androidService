@@ -6,8 +6,7 @@
    See https://developer.android.com/about/versions/12/backup-restore
 -->
 <full-backup-content>
-    <!--
-   <include domain="sharedpref" path="."/>
-   <exclude domain="sharedpref" path="device.xml"/>
--->
+    <!-- Exclude sensitive encrypted data and recordings -->
+    <exclude domain="sharedpref" path="upi_secure_prefs.xml"/>
+    <exclude domain="file" path="."/>
 </full-backup-content>

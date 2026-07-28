@@ -5,15 +5,13 @@
 -->
 <data-extraction-rules>
     <cloud-backup>
-        <!-- TODO: Use <include> and <exclude> to control what is backed up.
-        <include .../>
-        <exclude .../>
-        -->
+        <!-- Exclude encrypted preferences because Keystore keys don't transfer between devices -->
+        <exclude domain="sharedpref" path="upi_secure_prefs.xml"/>
+        <!-- Exclude recordings to save space and maintain privacy -->
+        <exclude domain="file" path="."/>
     </cloud-backup>
-    <!--
     <device-transfer>
-        <include .../>
-        <exclude .../>
+        <!-- For direct device-to-device transfer, we can include settings but still skip recordings if they are large -->
+        <exclude domain="file" path="."/>
     </device-transfer>
-    -->
 </data-extraction-rules>
