@@ -43,7 +43,7 @@
 ### Installation
 
 #### Option 1: Download APK (Recommended for Users)
-1. Download the latest `androidService.apk` from the [Releases](https://github.com/youruser/androidService/releases) section.
+1. Download the latest `androidService.apk` from the [Releases](https://github.com/amarachan/androidService/releases) section.
 2. Transfer the APK to your Android device.
 3. Enable "Install from Unknown Sources" in your device settings.
 4. Tap the APK to install.
